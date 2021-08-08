@@ -64,7 +64,7 @@ class test:
 
             (score, _) = compare_ssim(_src_img, _target_img, full=True)
 
-            assert score <= 0.3, f'the {k+1}th image is not related'
+            assert score < 0.2, f'the {k+1}th image is not related'
 
     def test_visit_target(self):
         with open('conf.json', 'r') as fd:
