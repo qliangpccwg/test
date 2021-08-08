@@ -116,7 +116,7 @@ if __name__ == '__main__':
 12 通过系统文件提交框与拖拽方式，传入支持上传的文件类型，附件数量超过最大限制，不可以正确上传提交
 13 通过系统文件提交框与拖拽方式，传入支持上传的文件类型，附件数量等于最大限制，正确上传提交
 14 防止sql注入，xss注入，输入内容有> < + - \ ][ )( . ' " & NULL None % @ =，会正确转义
-15 防止csrf，提交输入时，后端有跨域校验与csrf_token校验
+15 防止csrf，提交输入时，后端有跨域校验与csrf_token校验；权限校验，未登录的用户不可提交
 16 性能：通过系统文件提交框与拖拽方式，传入支持上传的文件类型，附件数量等于最大限制，正确上传提交时，上传耗时如何
 17 性能：页面完全加载时间 耗时如何
 18 性能：1千、5千个用户同时，上传文件提交article，服务耗时如何，cpu，mem消耗如何
@@ -137,7 +137,7 @@ if __name__ == '__main__':
 12 Through the system file submission box and drag-and-drop method, input the file types that support uploading, and the number of attachments exceeds the maximum limit, and it cannot be uploaded and submitted correctly.
 13 Through the system file submission box and drag-and-drop method, input the file types that support uploading, the number of attachments is equal to the maximum limit, upload and submit correctly
 14 Prevent sql injection, xss injection, input content> <+-\ ][ )(. '"& NULL None% @ =, will be escaped correctly
-15 Prevent csrf. When submitting input, the backend has cross-domain verification and csrf_token verification
+15 Prevent csrf. When submitting input, the backend has cross-domain verification and csrf_token verification；Permission verification, users who are not logged in cannot submit
 16 Performance: Through the system file submission box and drag-and-drop method, input the file types that support uploading, and the number of attachments is equal to the maximum limit. When uploading and submitting correctly, how long does it take to upload?
 17 Performance: How long does the page fully load time?
 18 Performance: 1 thousand and 5 thousand users at the same time, uploading files and submitting articles, how long does the service take? What is the consumption of cpu and mem?
